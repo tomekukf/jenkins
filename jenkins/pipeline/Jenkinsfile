@@ -13,7 +13,7 @@ pipeline {
             steps {
                 sh '''
                       pwd
-                    ./jenkins/pipeline/jenkins/build/mvn.sh mvn -B -DskipTests clean package
+                    ./jenkins/pipeline/jenkins/build/mvn.sh mvn  -X -B -DskipTests clean package
                     ./jenkins/pipeline/jenkins/build/build.sh
 
                 '''
