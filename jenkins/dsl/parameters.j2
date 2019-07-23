@@ -1,0 +1,12 @@
+
+job('job_dsl_example') {
+
+  description('This is my example job description')
+
+     parameters {
+        booleanParam('FLAG', true)
+        choiceParam('OPTION', ['option 1 (default)', 'option 2', 'option 3'])
+    }
+
+
+}
